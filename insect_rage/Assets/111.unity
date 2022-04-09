@@ -288,9 +288,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
---- !u!1 &965798998
-=======
 --- !u!1 &842209452
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,7 +371,6 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &947778322
->>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -382,31 +378,29 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 965799001}
-  - component: {fileID: 965799000}
-  - component: {fileID: 965798999}
+  - component: {fileID: 947778325}
+  - component: {fileID: 947778324}
+  - component: {fileID: 947778323}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Hero
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &965798999
+--- !u!114 &947778323
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965798998}
+  m_GameObject: {fileID: 947778322}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5112fdc79c35dc49bf7c887e05adcbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-<<<<<<< Updated upstream
-=======
 --- !u!212 &947778324
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -466,11 +460,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947778322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< Updated upstream
   m_LocalPosition: {x: 3.15, y: 0.1, z: 0}
-=======
-  m_LocalPosition: {x: 2.12, y: 0.57, z: 0}
->>>>>>> Stashed changes
+  m_LocalPosition: {x: 3.91, y: 2.73, z: 0}
   m_LocalScale: {x: 0.3082, y: 0.3623, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -493,7 +484,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
->>>>>>> Stashed changes
 --- !u!212 &965799000
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -553,17 +543,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965798998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.11, y: 2.12, z: 0}
+  m_LocalPosition: {x: -4.07, y: -2.84, z: 0}
   m_LocalScale: {x: 1, y: 2.1289, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
 --- !u!1 &1454044047
-=======
---- !u!1 &1138161675
->>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -571,39 +557,21 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< Updated upstream
-  - component: {fileID: 1454044048}
-  m_Layer: 0
-  m_Name: Orel
-=======
   - component: {fileID: 1138161676}
   - component: {fileID: 1138161677}
   m_Layer: 0
   m_Name: "\u041E\u0440\u0435\u043B"
->>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream
 --- !u!4 &1454044048
-=======
---- !u!4 &1138161676
->>>>>>> Stashed changes
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-  m_GameObject: {fileID: 1454044047}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 842209453}
-=======
   m_GameObject: {fileID: 1138161675}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.93, y: 0.99, z: 0.8155833}
@@ -691,7 +659,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1138161676}
->>>>>>> Stashed changes
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
