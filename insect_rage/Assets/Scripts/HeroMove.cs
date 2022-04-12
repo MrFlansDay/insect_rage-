@@ -5,6 +5,7 @@ using UnityEngine;
 public class HeroMove : MonoBehaviour
 {
     public float speed = 1;
+    public SpriteRenderer sprite;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,8 @@ public class HeroMove : MonoBehaviour
         float movementHor = Input.GetAxis("Horizontal");
         float movementVer = Input.GetAxis("Vertical");
         transform.position += new Vector3(movementHor, movementVer, 0) * speed * Time.deltaTime;
+        if (movementHor < 0) sprite.flipX = true;
+        else if (movementHor > 0) sprite.flipX = false;
 
     }
 }
