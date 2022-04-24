@@ -14,17 +14,26 @@ public class Enemy : MonoBehaviour
     [SerializeField] private bool _stun;
     [SerializeField] public bool _death;
 
-
-    private GameObject player;// наш персонаж
-    public int rotationSpeed; //переменная скорости поворота
-    public Transform target; // на этот объект будет реагировать наш враг
-    private Transform myTransform; // координаты врага
+    public int Health = 100;
+    private GameObject player;// Г­Г Гё ГЇГҐГ°Г±Г®Г­Г Г¦
+    public int rotationSpeed; //ГЇГҐГ°ГҐГ¬ГҐГ­Г­Г Гї Г±ГЄГ®Г°Г®Г±ГІГЁ ГЇГ®ГўГ®Г°Г®ГІГ 
+    public Transform target; // Г­Г  ГЅГІГ®ГІ Г®ГЎГєГҐГЄГІ ГЎГіГ¤ГҐГІ Г°ГҐГ ГЈГЁГ°Г®ГўГ ГІГј Г­Г Гё ГўГ°Г ГЈ
+    private Transform myTransform; // ГЄГ®Г®Г°Г¤ГЁГ­Г ГІГ» ГўГ°Г ГЈГ 
+ 
+ 
+  public void Death()
+    {
+        if(Health == 0)
+        {
+            Destroy(gameObject);
+        }
+    }
  
 
     private void Awake()
     {
-        this.myTransform = base.transform; //определяем текущее положение врага
-        this.player = GameObject.FindGameObjectWithTag("Player"); // определяем объект на который будет реагировать враг
+        this.myTransform = base.transform; //Г®ГЇГ°ГҐГ¤ГҐГ«ГїГҐГ¬ ГІГҐГЄГіГ№ГҐГҐ ГЇГ®Г«Г®Г¦ГҐГ­ГЁГҐ ГўГ°Г ГЈГ 
+        this.player = GameObject.FindGameObjectWithTag("Player"); // Г®ГЇГ°ГҐГ¤ГҐГ«ГїГҐГ¬ Г®ГЎГєГҐГЄГІ Г­Г  ГЄГ®ГІГ®Г°Г»Г© ГЎГіГ¤ГҐГІ Г°ГҐГ ГЈГЁГ°Г®ГўГ ГІГј ГўГ°Г ГЈ
         this.target = player.transform;
     }
 
@@ -36,7 +45,7 @@ public class Enemy : MonoBehaviour
 
         if (this.player != null)
         {
-            float num = Vector3.Distance(base.transform.position, this.player.transform.position); // если дистанция до персонажа будет меньше 8, то враг будет двигаться в сторону персонажа
+            float num = Vector3.Distance(base.transform.position, this.player.transform.position); // ГҐГ±Г«ГЁ Г¤ГЁГ±ГІГ Г­Г¶ГЁГї Г¤Г® ГЇГҐГ°Г±Г®Г­Г Г¦Г  ГЎГіГ¤ГҐГІ Г¬ГҐГ­ГјГёГҐ 8, ГІГ® ГўГ°Г ГЈ ГЎГіГ¤ГҐГІ Г¤ГўГЁГЈГ ГІГјГ±Гї Гў Г±ГІГ®Г°Г®Г­Гі ГЇГҐГ°Г±Г®Г­Г Г¦Г 
             if (num < 8f && num > 3f)
             {
                 this._attack = 0f;
@@ -46,7 +55,7 @@ public class Enemy : MonoBehaviour
                 this._stun = false;
                 this.myTransform.position += this.myTransform.forward * ((float)this.rotationSpeed * Time.deltaTime);
             }
-            if (num >= 5f) //если больше, враг будет стоять
+            if (num >= 5f) //ГҐГ±Г«ГЁ ГЎГ®Г«ГјГёГҐ, ГўГ°Г ГЈ ГЎГіГ¤ГҐГІ Г±ГІГ®ГїГІГј
             {
                 this._attack = 0f;
                 this._stun = true;
@@ -58,6 +67,15 @@ public class Enemy : MonoBehaviour
                 this._attack = 20f;
                 this._stun = false;
             }
+        }
+    }
+    
+    
+     private void OnColliderEnter2D(Collision2D collision)
+    {
+        if (gameObject.tag == "Bullet")
+        {
+            Health -= 20;
         }
     }
 }
