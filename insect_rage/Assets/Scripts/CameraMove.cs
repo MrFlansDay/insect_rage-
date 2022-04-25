@@ -17,28 +17,40 @@ public class CameraMove : MonoBehaviour
     {
         
         if (player) {
-            if (player.position.x > 8.88888888f) {
-                float temp = Mathf.Floor(axisX(player.position.x - 8.88888888f));
-                temp++;
-                transform.position = new Vector3(temp * 17.77777776f, transform.position.y, -10);
-            } else if (player.position.x < (-8.88888888f)) {
-                float temp = Mathf.Floor(axisX(player.position.x + 8.88888888f));
-                transform.position = new Vector3(temp * 17.77777776f, transform.position.y, -10);
-            } else {
-                transform.position = new Vector3(0, transform.position.y, -10);
-            }
+            if (player.position.y < 15.5f) {
+                if (player.position.x > 8.88888888f) {
+                    float temp = Mathf.Floor(axisX(player.position.x - 8.88888888f));
+                    temp++;
+                    transform.position = new Vector3(temp * 17.77777776f, transform.position.y, -10);
+                }
+                else if (player.position.x < (-8.88888888f)) {
+                    float temp = Mathf.Floor(axisX(player.position.x + 8.88888888f));
+                    transform.position = new Vector3(temp * 17.77777776f, transform.position.y, -10);
+                }
+                else {
+                    transform.position = new Vector3(0, transform.position.y, -10);
+                }
 
-            if (player.position.y > 5f) {
-                float temp = Mathf.Floor(axisY(player.position.y - 5f));
-                temp++;
-                transform.position = new Vector3(transform.position.x, temp * 10f, -10);
-            }
-            else if (player.position.y < (-5f)) {
-                float temp = Mathf.Floor(axisY(player.position.y + 5f));
-                transform.position = new Vector3(transform.position.x, temp * 10f, -10);
+                if (player.position.y > 5f) {
+                    float temp = Mathf.Floor(axisY(player.position.y - 5f));
+                    temp++;
+                    transform.position = new Vector3(transform.position.x, temp * 10f, -10);
+                }
+                else if (player.position.y < (-5f)) {
+                    float temp = Mathf.Floor(axisY(player.position.y + 5f));
+                    transform.position = new Vector3(transform.position.x, temp * 10f, -10);
+                }
+                else {
+                    transform.position = new Vector3(transform.position.x, 0, -10);
+                }
             }
             else {
-                transform.position = new Vector3(transform.position.x, 0, -10);
+                if (player.position.x < 8.5f & player.position.x > (-8.5f)) {
+                    transform.position = new Vector3(player.position.x, transform.position.y, -10);
+                }
+                if (player.position.y < 30f & player.position.y > 20f) {
+                    transform.position = new Vector3(transform.position.x, player.position.y, -10);
+                }
             }
         }
 
