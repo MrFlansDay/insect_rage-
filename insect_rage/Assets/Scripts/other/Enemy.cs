@@ -46,7 +46,7 @@ public class Enemy : MonoBehaviour
         if (this.player != null)
         {
             float num = Vector3.Distance(base.transform.position, this.player.transform.position); // åñëè äèñòàíöèÿ äî ïåðñîíàæà áóäåò ìåíüøå 8, òî âðàã áóäåò äâèãàòüñÿ â ñòîðîíó ïåðñîíàæà
-            if (num < 8f && num > 3f)
+            if (num < 8f && num > 1f)
             {
                 this._attack = 0f;
                 this._vert = 2f;
