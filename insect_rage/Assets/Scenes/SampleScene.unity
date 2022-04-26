@@ -756,6 +756,7 @@ GameObject:
   - component: {fileID: 1816399054}
   - component: {fileID: 1816399057}
   - component: {fileID: 1816399058}
+  - component: {fileID: 1816399059}
   m_Layer: 0
   m_Name: GG
   m_TagString: Player
@@ -888,6 +889,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1816399059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816399053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 299248b034cc1c64ea7094b8b6acf30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angle: -90
+  bullet: {fileID: 7063847422494219489, guid: d814aa9f5a2df3c43aae2769be82af75, type: 3}
+  heroPos: {fileID: 1816399056}
+  startReload: 0.5
 --- !u!4 &1899151332 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1197070012659352615, guid: 8844615ecf2544b45aa75d9361cb05e1, type: 3}
