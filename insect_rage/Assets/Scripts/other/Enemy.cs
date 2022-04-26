@@ -21,9 +21,9 @@ public class Enemy : MonoBehaviour
     private Transform myTransform; // êîîðäèíàòû âðàãà
  
  
-  public void Death()
+  public void Update()
     {
-        if(Health == 0)
+        if(Health <= 0)
         {
             Destroy(gameObject);
         }
@@ -71,11 +71,8 @@ public class Enemy : MonoBehaviour
     }
     
     
-     private void OnColliderEnter2D(Collision2D collision)
+     public void TakeDamage(int dmg)
     {
-        if (gameObject.tag == "Bullet")
-        {
-            Health -= 20;
-        }
+            Health -= dmg;
     }
 }
