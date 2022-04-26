@@ -16,6 +16,7 @@ public class PlayerMove : MonoBehaviour
     
     void Update()
     {
+        
 
         Vector3 move = GetBaseInput();
         if (move.sqrMagnitude > 0) {
@@ -45,5 +46,7 @@ public class PlayerMove : MonoBehaviour
         }
         return move_Velocity;
     }
+
+   
 
 }

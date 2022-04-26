@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
     private Transform myTransform; // êîîðäèíàòû âðàãà
  
  
-  public void Death()
+  private void Update()
     {
         if(Health == 0)
         {
@@ -46,7 +46,8 @@ public class Enemy : MonoBehaviour
         if (this.player != null)
         {
             float num = Vector3.Distance(base.transform.position, this.player.transform.position); // åñëè äèñòàíöèÿ äî ïåðñîíàæà áóäåò ìåíüøå 8, òî âðàã áóäåò äâèãàòüñÿ â ñòîðîíó ïåðñîíàæà
-            if (num < 8f && num > 3f)
+
+            if (num < 8f && num > 0.5f)
             {
                 this._attack = 0f;
                 this._vert = 2f;
@@ -61,13 +62,14 @@ public class Enemy : MonoBehaviour
                 this._stun = true;
             }
 
-            if (num <= 1.2f)
+            if (num <= 2f)
             {
                 this._vert = 0f;
                 this._attack = 20f;
                 this._stun = false;
             }
         }
+
     }
     
     

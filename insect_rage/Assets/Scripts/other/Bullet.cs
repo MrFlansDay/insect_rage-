@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
     public float speed;
     public float timeToEx;
     public float dist;
-    public int dmg;
+    public int dmg = 50;
     public LayerMask barr;
 
     void Update()

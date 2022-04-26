@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 3047665350909423820}
   - component: {fileID: 270203643889872169}
   - component: {fileID: 3987597932079391160}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,7 +104,7 @@ MonoBehaviour:
   _death: 0
   Health: 100
   rotationSpeed: 0
-  target: {fileID: 0}
+  target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
 --- !u!58 &270203643889872169
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -155,9 +155,9 @@ GameObject:
   - component: {fileID: 723849360669062692}
   - component: {fileID: 2533562065440934721}
   - component: {fileID: 1230588880269632618}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -246,7 +246,7 @@ MonoBehaviour:
   _death: 0
   Health: 100
   rotationSpeed: 0
-  target: {fileID: 0}
+  target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
 --- !u!58 &2533562065440934721
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -331,9 +331,9 @@ GameObject:
   - component: {fileID: 11121761127865066}
   - component: {fileID: 4105683314748431461}
   - component: {fileID: 2792691201970845276}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -422,7 +422,7 @@ MonoBehaviour:
   _death: 0
   Health: 100
   rotationSpeed: 0
-  target: {fileID: 0}
+  target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
 --- !u!58 &4105683314748431461
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -473,9 +473,9 @@ GameObject:
   - component: {fileID: 501592983151214498}
   - component: {fileID: 6595234454776505442}
   - component: {fileID: 5529656331770710394}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -564,7 +564,7 @@ MonoBehaviour:
   _death: 0
   Health: 100
   rotationSpeed: 0
-  target: {fileID: 0}
+  target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
 --- !u!58 &6595234454776505442
 CircleCollider2D:
   m_ObjectHideFlags: 0

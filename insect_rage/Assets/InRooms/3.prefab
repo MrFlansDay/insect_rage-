@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 8811957280192788463}
   - component: {fileID: 2924747623693616170}
   - component: {fileID: 7930139849931913626}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,7 +104,7 @@ MonoBehaviour:
   _death: 0
   Health: 100
   rotationSpeed: 0
-  target: {fileID: 0}
+  target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
 --- !u!58 &2924747623693616170
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -155,9 +155,9 @@ GameObject:
   - component: {fileID: 1837875234153916233}
   - component: {fileID: 8144124758633707512}
   - component: {fileID: 621043332322468271}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -246,7 +246,7 @@ MonoBehaviour:
   _death: 0
   Health: 100
   rotationSpeed: 0
-  target: {fileID: 0}
+  target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
 --- !u!58 &8144124758633707512
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -297,9 +297,9 @@ GameObject:
   - component: {fileID: 3945843425358621876}
   - component: {fileID: 7936797063969052055}
   - component: {fileID: 3580347356789639070}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -388,7 +388,7 @@ MonoBehaviour:
   _death: 0
   Health: 100
   rotationSpeed: 0
-  target: {fileID: 0}
+  target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
 --- !u!58 &7936797063969052055
 CircleCollider2D:
   m_ObjectHideFlags: 0
