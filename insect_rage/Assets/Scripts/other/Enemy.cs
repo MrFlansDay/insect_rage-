@@ -71,13 +71,10 @@ public class Enemy : MonoBehaviour
         }
 
     }
-    
-    
-     private void OnColliderEnter2D(Collision2D collision)
-    {
-        if (gameObject.tag == "Bullet")
-        {
-            Health -= 20;
-        }
+
+
+    public void TakeDamage(int dmg) {
+        Health -= dmg;
     }
 }
+

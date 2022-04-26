@@ -4,27 +4,30 @@ using UnityEngine;
 
 public class ShootingHero : MonoBehaviour
 {
-    public Rigidbody2D projectile;
+    public float angle;
+    public GameObject bullet;
     public Transform heroPos;
-    public int bulletSpeed = 10;
-    public float timeout = 0.5f;
-    private float curTimeout;
+
+    private float reload;
+    public float startReload;
 
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, rotZ + angle);
+
+        if (reload <= 0)
         {
-            curTimeout += Time.deltaTime;
-            if (curTimeout > timeout)
+            if (Input.GetMouseButton(0))
             {
-                curTimeout = 0;
-                Rigidbody2D bulletInstance = Instantiate(projectile, heroPos.position, Quaternion.identity) as Rigidbody2D;
-                bulletInstance.velocity = heroPos.forward * bulletSpeed;
+                Instantiate(bullet, heroPos.position, transform.rotation);
+                reload = startReload;
             }
         }
         else
         {
-            curTimeout = timeout + 1;
+            reload -= Time.deltaTime;
         }
     }
 }
