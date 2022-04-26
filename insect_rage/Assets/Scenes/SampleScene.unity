@@ -902,7 +902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   angle: -90
-  bullet: {fileID: 7063847422494219489, guid: d814aa9f5a2df3c43aae2769be82af75, type: 3}
+  bullet: {fileID: 888317858884890551, guid: d814aa9f5a2df3c43aae2769be82af75, type: 3}
   heroPos: {fileID: 1816399056}
   startReload: 0.5
 --- !u!4 &1899151332 stripped
