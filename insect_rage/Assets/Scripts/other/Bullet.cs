@@ -21,8 +21,10 @@ public class Bullet : MonoBehaviour
             }
             
         }
-        timeToDestroy += Time.deltaTime;
-        if (timeToDestroy >= 1) Destroy(gameObject);
         transform.Translate(Vector2.up * speed * Time.deltaTime);
+    }
+    private void FixedUpdate() {
+        timeToDestroy += 0.05f;
+        if (timeToDestroy >= 1) Destroy(gameObject);
     }
 }

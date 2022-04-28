@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4907270649672254781}
   - component: {fileID: 7647408493998059322}
   - component: {fileID: 6567430993341351926}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Circle (3)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -105,7 +105,6 @@ MonoBehaviour:
   Health: 100
   rotationSpeed: 0
   target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
-  Healing: {fileID: 6852697789250367105, guid: f8d7510d16bfe2840858d5f9f9ac80f7, type: 3}
 --- !u!58 &7647408493998059322
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -191,7 +190,7 @@ GameObject:
   - component: {fileID: 4662649041368857522}
   - component: {fileID: 4119849002699236085}
   - component: {fileID: 4432860461976991014}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Circle (1)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -283,7 +282,6 @@ MonoBehaviour:
   Health: 100
   rotationSpeed: 0
   target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
-  Healing: {fileID: 6852697789250367105, guid: f8d7510d16bfe2840858d5f9f9ac80f7, type: 3}
 --- !u!58 &4119849002699236085
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -334,7 +332,7 @@ GameObject:
   - component: {fileID: 5786406632434119294}
   - component: {fileID: 391871852780653956}
   - component: {fileID: 952228960438102188}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Circle (2)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -426,7 +424,6 @@ MonoBehaviour:
   Health: 100
   rotationSpeed: 0
   target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
-  Healing: {fileID: 6852697789250367105, guid: f8d7510d16bfe2840858d5f9f9ac80f7, type: 3}
 --- !u!58 &391871852780653956
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -477,7 +474,7 @@ GameObject:
   - component: {fileID: 470395059305594883}
   - component: {fileID: 711646950492427369}
   - component: {fileID: 77537012785792597}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Circle
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -569,7 +566,6 @@ MonoBehaviour:
   Health: 100
   rotationSpeed: 0
   target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
-  Healing: {fileID: 6852697789250367105, guid: f8d7510d16bfe2840858d5f9f9ac80f7, type: 3}
 --- !u!58 &711646950492427369
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -620,7 +616,7 @@ GameObject:
   - component: {fileID: 5264027703796367059}
   - component: {fileID: 8489609146646400666}
   - component: {fileID: 8031383854012327322}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Circle (4)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -712,7 +708,6 @@ MonoBehaviour:
   Health: 100
   rotationSpeed: 0
   target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
-  Healing: {fileID: 6852697789250367105, guid: f8d7510d16bfe2840858d5f9f9ac80f7, type: 3}
 --- !u!58 &8489609146646400666
 CircleCollider2D:
   m_ObjectHideFlags: 0
