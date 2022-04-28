@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class ShootingHero : MonoBehaviour
 {
-    public float angle;
+    public float angle = -90f;
     public GameObject bullet;
     public Transform heroPos;
 
     private float reload;
-    public float startReload;
+    public float startReload = 0.5f;
 
     void Update()
     {

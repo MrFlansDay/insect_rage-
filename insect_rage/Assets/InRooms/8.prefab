@@ -105,6 +105,7 @@ MonoBehaviour:
   Health: 100
   rotationSpeed: 0
   target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
+  Healing: {fileID: 6852697789250367105, guid: f8d7510d16bfe2840858d5f9f9ac80f7, type: 3}
 --- !u!50 &2943301695485467112
 Rigidbody2D:
   serializedVersion: 4
@@ -247,6 +248,7 @@ MonoBehaviour:
   Health: 100
   rotationSpeed: 0
   target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
+  Healing: {fileID: 6852697789250367105, guid: f8d7510d16bfe2840858d5f9f9ac80f7, type: 3}
 --- !u!50 &895555536870189619
 Rigidbody2D:
   serializedVersion: 4
@@ -389,6 +391,7 @@ MonoBehaviour:
   Health: 100
   rotationSpeed: 0
   target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
+  Healing: {fileID: 6852697789250367105, guid: f8d7510d16bfe2840858d5f9f9ac80f7, type: 3}
 --- !u!50 &2649788462053970711
 Rigidbody2D:
   serializedVersion: 4
@@ -531,6 +534,7 @@ MonoBehaviour:
   Health: 100
   rotationSpeed: 0
   target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
+  Healing: {fileID: 6852697789250367105, guid: f8d7510d16bfe2840858d5f9f9ac80f7, type: 3}
 --- !u!50 &3783672237472503436
 Rigidbody2D:
   serializedVersion: 4
@@ -673,6 +677,7 @@ MonoBehaviour:
   Health: 100
   rotationSpeed: 0
   target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
+  Healing: {fileID: 6852697789250367105, guid: f8d7510d16bfe2840858d5f9f9ac80f7, type: 3}
 --- !u!50 &7904026296112101098
 Rigidbody2D:
   serializedVersion: 4
@@ -815,6 +820,7 @@ MonoBehaviour:
   Health: 100
   rotationSpeed: 0
   target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
+  Healing: {fileID: 6852697789250367105, guid: f8d7510d16bfe2840858d5f9f9ac80f7, type: 3}
 --- !u!50 &5022292354172476475
 Rigidbody2D:
   serializedVersion: 4
@@ -957,6 +963,7 @@ MonoBehaviour:
   Health: 100
   rotationSpeed: 0
   target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
+  Healing: {fileID: 6852697789250367105, guid: f8d7510d16bfe2840858d5f9f9ac80f7, type: 3}
 --- !u!50 &1804255790848209861
 Rigidbody2D:
   serializedVersion: 4
@@ -1099,6 +1106,7 @@ MonoBehaviour:
   Health: 100
   rotationSpeed: 0
   target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
+  Healing: {fileID: 6852697789250367105, guid: f8d7510d16bfe2840858d5f9f9ac80f7, type: 3}
 --- !u!50 &5953732671092144142
 Rigidbody2D:
   serializedVersion: 4

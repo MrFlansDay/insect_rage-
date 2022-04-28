@@ -7,8 +7,11 @@ public class PlayerDeath : MonoBehaviour
 {
 
     public int Health = 100;
+    public static int Health2 = 0;
     private float invulnerability = 1f;
+    public int HealPlayerForKill = 2;
     public float start_invulnerability = 2f;
+    private int scoreKills = 0;
     
 
     
@@ -20,6 +23,10 @@ public class PlayerDeath : MonoBehaviour
     
     void Update()
     {
+        if (Health2 - scoreKills != 0) {
+            scoreKills++;
+            if (Health <= 98) Health += HealPlayerForKill;
+        }
 
         if (Health <= 0) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -38,4 +45,5 @@ public class PlayerDeath : MonoBehaviour
         }
         
     }
+    
 }

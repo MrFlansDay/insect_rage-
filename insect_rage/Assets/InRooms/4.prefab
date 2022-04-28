@@ -105,6 +105,7 @@ MonoBehaviour:
   Health: 100
   rotationSpeed: 0
   target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
+  Healing: {fileID: 6852697789250367105, guid: f8d7510d16bfe2840858d5f9f9ac80f7, type: 3}
 --- !u!58 &270203643889872169
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -247,6 +248,7 @@ MonoBehaviour:
   Health: 100
   rotationSpeed: 0
   target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
+  Healing: {fileID: 6852697789250367105, guid: f8d7510d16bfe2840858d5f9f9ac80f7, type: 3}
 --- !u!58 &2533562065440934721
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -423,6 +425,7 @@ MonoBehaviour:
   Health: 100
   rotationSpeed: 0
   target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
+  Healing: {fileID: 6852697789250367105, guid: f8d7510d16bfe2840858d5f9f9ac80f7, type: 3}
 --- !u!58 &4105683314748431461
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -565,6 +568,7 @@ MonoBehaviour:
   Health: 100
   rotationSpeed: 0
   target: {fileID: 1581748729105779622, guid: ccca710b08561844e9c1cac1829f644a, type: 3}
+  Healing: {fileID: 6852697789250367105, guid: f8d7510d16bfe2840858d5f9f9ac80f7, type: 3}
 --- !u!58 &6595234454776505442
 CircleCollider2D:
   m_ObjectHideFlags: 0
